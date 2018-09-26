@@ -1,0 +1,44 @@
+.legend-container {
+  background: gray;
+  color: white;
+  padding: 20px 0;
+  transition: .3s;
+}
+
+.legend-container h1 {
+  text-align: center;
+  font-family: "Special Elite", monospace;
+  font-weight: lighter;
+  margin-top: 0;
+  font-size: 1.4rem;
+  transition: .3s;
+}
+
+.legend-icon-flex {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.legend-icon-item-flex {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.legend-icon-item-flex p {
+  margin: 0 0 0 10px;
+  transition: .3s;
+}
+
+@media (min-width: 768px) {
+  .legend-container {
+    padding: 30px 0;
+  }
+  .legend-container h1 {
+    font-size: 1.8rem;
+  }
+  .legend-icon-item-flex {
+    font-size: 1.4rem;
+  }
+}
