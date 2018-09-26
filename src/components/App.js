@@ -9,16 +9,24 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      coatSearch: '' ,
-      patternSearch: '' ,
+      coatSearchFilter: '' ,
+      patternSearchFilter: '' ,
     };
+  }
+
+  handleCoatFilter = (searchFilter) => {
+    console.log(searchFilter);
+  }
+
+  handlePatternFilter = (searchFilter) => {
+    console.log(searchFilter);
   }
 
   render() {
     return (
       <div className="App">
         <Header />
-        <Filter />
+        <Filter onCoatFilter={this.handleCoatFilter} onPatternFilter={this.handlePatternFilter} />
         <Legend />
       </div>
     );

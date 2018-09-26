@@ -1,12 +1,21 @@
 import React from 'react';
 import '../styles/Filter.css';
 
-export default function Filter() {
+export default function Filter(props) {
+
+  function handleCoatSelectChange(e) {
+    props.onCoatFilter(e.target.value);
+  }
+
+  function handlePatternSelectChange(e) {
+    props.onPatternFilter(e.target.value);
+  }
+
   return (
     <div className="filter-container">
       <h1>Show me cat breeds that are</h1>
       <div className="filter-flex">
-        <select>
+        <select onChange={handleCoatSelectChange}>
           <option value='' defaultValue>this coat</option>
           <option value='short'>Short</option>
           <option value='medium'>Medium</option>
@@ -16,7 +25,7 @@ export default function Filter() {
           <option value='hairless'>Hairless</option>
         </select>
         <p>and<br /><br />or</p>
-        <select>
+        <select onChange={handlePatternSelectChange}>
           <option value='' defaultValue>this pattern</option>
           <option value='solid'>Solid</option>
           <option value='spot'>Spotted</option>
