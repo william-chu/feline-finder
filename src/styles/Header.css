@@ -1,0 +1,39 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #2196f3;
+  height: 100px;
+  padding: 20px;
+  color: white;
+  transition: .5s;
+}
+
+.header-logo {
+  height: 60px;
+  transition: .3s;
+}
+
+.header-title {
+  font-size: 1rem;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  transition: .3s;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    height: 150px;
+  }
+
+  .header-logo {
+    height: 80px;
+  }
+  .header-title {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+}
