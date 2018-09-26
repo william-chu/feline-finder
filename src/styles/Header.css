@@ -8,7 +8,7 @@
   height: 100px;
   padding: 20px;
   color: white;
-  transition: .5s;
+  transition: .3s;
 }
 
 .header-logo {
@@ -32,8 +32,9 @@
   .header-logo {
     height: 80px;
   }
+
   .header-title {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     margin: 0;
   }
 }
