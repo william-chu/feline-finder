@@ -11,6 +11,7 @@ class App extends Component {
     this.state = {
       coatFilter: '' ,
       patternFilter: '' ,
+      catResults: [],
     };
   }
 
@@ -22,6 +23,21 @@ class App extends Component {
   handlePatternFilter = (searchFilter) => {
     let newPatternFilter = searchFilter;
     this.setState({patternFilter: newPatternFilter}, function() {console.log(this.state.patternFilter)})
+  }
+
+  catData = () => {
+    import('../cats.json')
+    .then(data => {
+      let newCatResults = [];
+      data.map((cat) => {
+       return newCatResults.push(cat);
+      });
+      this.setState({catResults: newCatResults}, function() {console.log(this.state.catResults)});
+    })
+  }
+
+  componentDidMount() {
+    this.catData();
   }
 
   render() {
