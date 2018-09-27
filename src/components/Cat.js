@@ -6,7 +6,7 @@ export default function Cat(props) {
   return (
     <div className="cat-container">
       <div className="cat-portrait-bg">
-        <img src={catImg} className="cat-portrait" alt="image of cat" />
+        <img src={catImg} className="cat-portrait" alt="cat breed" />
         {(props.catDetail.origin.toLowerCase() === "crossbreed" || props.catDetail.origin.toLowerCase() === 'mutation') &&
           <div className="glyph-bg">
             {props.catDetail.origin.toLowerCase() === "mutation" && <i className="fal fa-dna"></i>}
