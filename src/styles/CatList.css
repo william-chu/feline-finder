@@ -1,0 +1,25 @@
+.catlist-container h1 {
+  text-align: center;
+  font-family: "Roboto Condensed", monospace;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  transition: .3s;
+  color: #3c3c3c;
+}
+
+.catlist-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  max-width: 1080px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .catlist-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .catlist-container h1 {
+    font-size: 1.6rem;
+  }
+}

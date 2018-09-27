@@ -1,0 +1,25 @@
+.cat-container .cat-portrait-bg {
+  background: #673ab7;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+  padding: 50px;
+  border-radius: 50%;
+}
+.cat-container .cat-portrait {
+  width: 100%;
+}
+
+.cat-container h2 {
+  font-family: "Special Elite", monospace;
+  font-weight: lighter;
+  color: #3c3c3c;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.cat-container p {
+  font-family: "Roboto", sans-serif;
+  color: #4c4c4c;
+  text-align: center;
+}
