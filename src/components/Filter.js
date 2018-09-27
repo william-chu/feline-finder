@@ -24,7 +24,7 @@ export default function Filter(props) {
           <option value='rex'>Rex</option>
           <option value='hairless'>Hairless</option>
         </select>
-        <p>and<br /><br />or</p>
+        <p>or</p>
         <select onChange={handlePatternSelectChange}>
           <option value='' defaultValue>this pattern</option>
           <option value='solid'>Solid</option>
