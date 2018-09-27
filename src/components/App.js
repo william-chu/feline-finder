@@ -4,6 +4,7 @@ import '../styles/App.css';
 import Header from './Header';
 import Filter from './Filter';
 import Legend from './Legend';
+import CatList from './CatList';
 
 class App extends Component {
   constructor(props) {
@@ -46,6 +47,7 @@ class App extends Component {
         <Header />
         <Filter onCoatFilter={this.handleCoatFilter} onPatternFilter={this.handlePatternFilter} />
         <Legend />
+        <CatList catResults={this.state.catResults} />
       </div>
     );
   }
