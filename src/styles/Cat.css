@@ -1,9 +1,9 @@
 .cat-container .cat-portrait-bg {
   background: #673ab7;
-  max-width: 200px;
+  width: 150px;
   display: block;
   margin: auto;
-  padding: 50px;
+  padding: 45px 40px 35px;
   border-radius: 50%;
 }
 .cat-container .cat-portrait {
